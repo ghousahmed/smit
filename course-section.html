@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>course-section</title>
+</head>
+<body>
+    <section class="course-section">
+        <h2 class="course-title">Our Featured Courses</h2>
+        <div class="carousel-container">
+            <button class="carousel-arrow left" onclick="scrollCarousel(-1)">&#8249;</button>
+            <div class="carousel" id="carousel">
+                <div class="course-card">
+                    <img src="https://as1.ftcdn.net/v2/jpg/08/97/63/00/1000_F_897630036_4hboaCgb8CHIkZ78udDMhL3ZYkiphpiw.jpg" alt="Modern Web Application">
+                    <div class="card-content">
+                        <h3>Modern Web Application</h3>
+                        <p>Learn to build robust and scalable web applications using the latest technologies.</p>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#enrollModal">Enroll Now</a>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <img src="https://img.freepik.com/free-vector/programmers-using-javascript-programming-language-computer-tiny-people-javascript-language-javascript-engine-js-web-development-concept-bright-vibrant-violet-isolated-illustration_335657-986.jpg?t=st=1734151753~exp=1734155353~hmac=7e430a57f0ef14e255467109c149c573ca84601c649a969a9a0e6c36fad9e6f3&w=900" alt="JavaScript Mastery">
+                    <div class="card-content">
+                        <h3>JavaScript Mastery</h3>
+                        <p>Master JavaScript, the backbone of web development, from basics to advanced concepts.</p>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#enrollModal">Enroll Now</a>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <img src="https://img.freepik.com/free-vector/gradient-colored-ui-ux-background_79603-1924.jpg?t=st=1734152019~exp=1734155619~hmac=d1a2523abf8f15e38db1be19612bef2e55fb8b3c59e10e177649fe37763996fc&w=900" alt="Flutter Development">
+                    <div class="card-content">
+                        <h3>Flutter Development</h3>
+                        <p>Learn to create beautiful cross-platform mobile applications with Flutter.</p>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#enrollModal">Enroll Now</a>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <img src="https://img.freepik.com/premium-vector/modern-flat-design-concept-business-analysis-with-characters-business-meeting-viewing-data_1026586-621.jpg?w=740" alt="AWS Essentials">
+                    <div class="card-content">
+                        <h3>AWS Essentials</h3>
+                        <p>Gain in-depth knowledge of cloud computing and Amazon Web Services (AWS).</p>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#enrollModal">Enroll Now</a>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <img src="https://a.storyblok.com/f/172176/800x450/b060274d03/benefits-of-next-js.jpg" alt="Next.js Framework">
+                    <div class="card-content">
+                        <h3>Next.js Framework</h3>
+                        <p>Explore the power of Next.js for building fast and SEO-friendly web applications.</p>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#enrollModal">Enroll Now</a>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <img src="https://img.freepik.com/free-vector/creative-abstract-quantum-illustration_23-2149236239.jpg?t=st=1734154335~exp=1734157935~hmac=3c43f3e8bc8222f5b21138cc771399b52fa452690d99b764b1acd777b4299079&w=740" alt="React.js Advanced">
+                    <div class="card-content">
+                        <h3>React.js Advanced</h3>
+                        <p>Take your React.js skills to the next level with advanced techniques and patterns.</p>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#enrollModal">Enroll Now</a>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <img src="https://img.freepik.com/free-vector/digital-marketing-concept-illustration_114360-1187.jpg" alt="Digital Marketing">
+                    <div class="card-content">
+                        <h3>Digital Marketing</h3>
+                        <p>Discover strategies and tools to create impactful digital campaigns and grow online presence effectively.</p>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#enrollModal">Enroll Now</a>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <img src="https://img.freepik.com/free-vector/service-centre-isometric-composition_1284-21691.jpg?t=st=1734156319~exp=1734159919~hmac=364b3e9b19f94c0dd1bdf667f7b34b1a0257c23a3ddd5773783bbfb91dbe0674&w=740" alt="Laptop Repairing">
+                    <div class="card-content">
+                        <h3>Laptop Repairing</h3>
+                        <p>Master the art of diagnosing and fixing hardware and software issues in laptops.</p>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#enrollModal">Enroll Now</a>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <img src="https://img.freepik.com/premium-photo/worker-gloves-repair-refrigerator-home_266732-7662.jpg?w=900" alt="Refrigerator Repairing">
+                    <div class="card-content">
+                        <h3>Refrigerator Repairing</h3>
+                        <p>Learn to diagnose and repair common refrigerator issues with hands-on training.</p>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#enrollModal">Enroll Now</a>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <img src="https://img.freepik.com/free-vector/security-concept-illustration_114360-1528.jpg?t=st=1734156620~exp=1734160220~hmac=23c582554ede58a669d4c92b72cd7fed345a4d9b1d5a9fe9f513c837733729f8&w=740" alt="Cybersecurity">
+                    <div class="card-content">
+                        <h3>Cybersecurity</h3>
+                        <p>Master the skills to protect systems, networks, and data from cyber threats.</p>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#enrollModal">Enroll Now</a>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <img src="https://img.freepik.com/premium-photo/ai-humanoid-robot-holding-virtual-hologram-screen-showing-concept-ai-brain_31965-7752.jpg?w=1060" alt="Artificial Intelligence">
+                    <div class="card-content">
+                        <h3>Artificial Intelligence</h3>
+                        <p>Explore the world of AI and learn to develop intelligent systems and algorithms.</p>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#enrollModal">Enroll Now</a>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <img src="https://img.freepik.com/premium-photo/blockchain-dark-cube-blockchain-technology-with-abstract-background-blockchain-network-abstract-background-3d-rendering_120871-1502.jpg?w=900" alt="Blockchain Technology">
+                    <div class="card-content">
+                        <h3>Blockchain Technology</h3>
+                        <p>Learn the fundamentals of blockchain, its applications, and how to build decentralized systems.</p>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#enrollModal">Enroll Now</a>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <img src="https://img.freepik.com/free-vector/hand-drawn-flat-design-devops-illustration_23-2149375793.jpg?t=st=1734158405~exp=1734162005~hmac=e54d50cee2d2222f4c449171e1a24d4a35572997eae7325e8bd43e22b5d6b819&w=740" alt="DevOps">
+                    <div class="card-content">
+                        <h3>DevOps</h3>
+                        <p>Master the DevOps lifecycle and learn how to automate and integrate processes between software development and IT operations.</p>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#enrollModal">Enroll Now</a>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <img src="https://img.freepik.com/free-vector/video-files-concept-illustration_114360-4418.jpg?t=st=1734158468~exp=1734162068~hmac=a9a20614de4b8d98cbfaa1178c5ff93fa820161d5093691a672b2ca9288de5d7&w=740" alt="Video Animations">
+                    <div class="card-content">
+                        <h3>Video Animations</h3>
+                        <p>Explore the art of video animation, from storyboarding to creating dynamic animations using industry-standard tools.</p>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#enrollModal">Enroll Now</a>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <img src="https://img.freepik.com/free-vector/man-playing-online-games-concept_52683-37362.jpg?t=st=1734158831~exp=1734162431~hmac=5ccb66f66d2ad4004e1d791a3834c9fc9c3e006fe79e0bb8eec128259e55862b&w=740" alt="Game Development">
+                    <div class="card-content">
+                        <h3>Game Development</h3>
+                        <p>Learn to design, develop, and create interactive games using popular game engines and programming languages.</p>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#enrollModal">Enroll Now</a>
+                    </div>
+                </div> 
+            </div>
+            <button class="carousel-arrow right" onclick="scrollCarousel(1)">&#8250;</button>
+        </div>
+    </section>
+
+    <div class="modal fade" id="enrollModal" tabindex="-1" aria-labelledby="enrollModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="enrollModalLabel">Enroll Now</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="enrollForm">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="fatherName" class="form-label">Father's Name</label>
+                            <input type="text" class="form-control" id="fatherName" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="course" class="form-label">Course</label>
+                            <select class="form-select" id="course">
+                                <option value="Select Course">Select Courses</option>
+                                <option value="Modern Web Application">Modern Web Application</option>
+                                <option value="JavaScript Mastery">JavaScript Mastery</option>
+                                <option value="Flutter Development">Flutter Development</option>
+                                <option value="AWS Essentials">AWS Essentials</option>
+                                <option value="Next.js Framework">Next.js Framework</option>
+                                <option value="React.js Advanced">React.js Advanced</option>
+                                <option value="Digital Marketing">Digital Marketing</option>
+                                <option value="Laptop Repairing">Laptop Repairing</option>
+                                <option value="Refrigerator Repairing">Refrigerator Repairing</option>
+                                <option value="Cybersecurity">Cybersecurity</option>
+                                <option value="Artificial Intelligence">Artificial Intelligence</option>
+                                <option value="Blockchain Technology">Blockchain Technology</option>
+                                <option value="DevOps">DevOps</option>
+                                <option value="Video Animations">Video Animations</option>
+                                <option value="Game Development">Game Development</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="classTiming" class="form-label">Class Timing</label>
+                            <select class="form-select" id="classTiming">
+                                <option value="Morning">Morning</option>
+                                <option value="Afternoon">Afternoon</option>
+                                <option value="Evening">Evening</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="seat" class="form-label">Select Seat</label>
+                            <select class="form-select" id="seat">
+                                <option value="A1">A1</option>
+                                <option value="A2">A2</option>
+                                <option value="B1">B1</option>
+                                <option value="B2">B2</option>
+                                <!-- Add more seats as needed -->
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="address" class="form-label">Address</label>
+                            <textarea class="form-control" id="address" rows="3" required></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Phone Number</label>
+                            <input type="tel" class="form-control" id="phone" pattern="03[0-9]{2}-[0-9]{7}" required>
+                            <small class="form-text text-muted">Format: 0340-3442957</small>
+                        </div>
+                        <div class="mb-3">
+                            <label for="cnic" class="form-label">CNIC Number</label>
+                            <input type="text" class="form-control" id="cnic" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
