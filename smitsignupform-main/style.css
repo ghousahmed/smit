@@ -1,0 +1,289 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Container Styling */
+.container {
+    max-width: 100%;
+    width: 50%; /* Default width */
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo */
+.logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Header Styling */
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.main-title {
+    font-size: 2em;
+    color: #333;
+}
+
+.sub-title {
+    font-size: 1.2em;
+    color: #666;
+}
+
+/* Navigation Styling */
+.navigation {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #0066cc;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.nav-link:hover {
+    background-color: #e0f0ff;
+}
+
+/* Form Styling */
+.registration-form {
+    width: 100%;
+}
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.form-row label {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+    display: inline-block;
+    width: 100%;
+}
+
+.form-row input[type="text"],
+.form-row input[type="email"],
+.form-row input[type="tel"],
+.form-row input[type="date"],
+.form-row input[type="number"],
+.form-row select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #90c648;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.3s;
+    text-transform: capitalize;
+}
+.form-row input:focus,
+.form-row select:focus {
+    border-color: #0066cc;
+}
+
+.file-upload {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.file-upload input[type="file"] {
+    display: none;
+}
+
+.custom-file-upload {
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    background-color: #42b72a;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-align: center;
+}
+
+.custom-file-upload:hover {
+    background-color: #4bc433;
+}
+
+.file-note {
+    font-size: 0.85em;
+    color: #000000;
+    margin-top: 5px;
+}
+
+/* Declarations */
+.declarations {
+    margin: 20px 0;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    font-size: 0.9em;
+    color: #555;
+}
+
+.declarations ol {
+    padding-left: 6px;
+}
+
+.declarations li {
+    margin-bottom: 10px;
+}
+
+/* Submit Button */
+.submit-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #0866ff;
+    color: white;
+    font-size: 1.1em;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-align: center;
+}
+
+.submit-button:hover {
+    background-color: #1a71fd;
+}
+
+/* Responsive Design */
+
+/* Medium Devices (Tablets, 768px and up) */
+@media (max-width: 1024px) {
+    .container {
+        width: 75%;
+        padding: 15px;
+    }
+
+    .form-row {
+        flex-direction: column;
+    }
+
+    .main-title {
+        font-size: 1.8em;
+    }
+
+    .submit-button {
+        font-size: 1em;
+        padding: 10px;
+    }
+}
+
+/* Small Devices (Landscape Phones, 600px and up) */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .main-title {
+        font-size: 1.6em;
+    }
+
+    .sub-title {
+        font-size: 1em;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .nav-link {
+        padding: 6px 12px;
+        font-size: 0.95em;
+    }
+
+    .custom-file-upload {
+        padding: 8px 16px;
+        font-size: 0.9em;
+    }
+
+    .submit-button {
+        font-size: 0.95em;
+    }
+}
+
+/* Extra Small Devices (Portrait Phones, 480px and up) */
+@media (max-width: 480px) {
+    .container {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .main-title {
+        font-size: 1.5em;
+    }
+
+    .sub-title {
+        font-size: 0.9em;
+    }
+
+    .nav-links {
+        flex-direction: row;
+        align-items: center;
+        gap: 3px;
+    }
+
+    .nav-link {
+        padding: 5px 10px;
+        font-size: 0.7em;
+        width: 100%;
+        text-align: center;
+    }
+
+    .submit-button {
+        font-size: 0.5em;
+        padding: 8px;
+    }
+    .declarations ol {
+        padding-left: 2px;
+    }
+    .declarations{
+        font-size: 0.2em;
+        text-align: justify;
+        text-align: left;
+        color: #222cb6;
+    }
+    .file-note {
+        font-size: 0.30em;
+        color: #000000;
+        margin-top: 5px;
+    }
+    
+}
+
+
